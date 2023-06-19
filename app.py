@@ -3,6 +3,7 @@ import psycopg2 as pg2
 #import time
 
 from datetime import date, datetime
+import os
 
 uplink_key = os.environ['UPLINK_KEY'] 
 anvil.server.connect(uplink_key)
@@ -12,7 +13,6 @@ anvil.server.connect(uplink_key)
 
 '''
 # HEROKU - ADD THESE INSTEAD:
-import os
 DB_HOST = os.environ.get('DB_HOST')
 DB_NAME = os.environ.get('DB_NAME')
 DB_USER = os.environ.get('DB_USER')

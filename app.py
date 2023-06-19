@@ -1,15 +1,14 @@
 import anvil.server
 import psycopg2 as pg2
 #import time
+import anvil.server
 
 from datetime import date, datetime
 import os
 
-#uplink_key = os.environ['UPLINK_KEY']
-#anvil.server.connect(uplink_key)
+uplink_key = os.environ['UPLINK_KEY']
+anvil.server.connect(uplink_key)
 
-import anvil.server
-anvil.server.connect("server_7H4WUF46LHBZE5AZNNVOPM4S-VFUBAVKSCYH72RXM")
 
 '''
 # LOCAL - Remove the following lines for Heroku

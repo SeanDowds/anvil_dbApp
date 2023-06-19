@@ -30,9 +30,6 @@ conn = pg2.connect(
     )
 
 
-print('Fully Loaded and ready: ',time.time())
-
-
 
 @anvil.server.callable
 def get_emails_names():

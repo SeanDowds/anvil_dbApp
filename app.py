@@ -4,8 +4,9 @@ import psycopg2 as pg2
 
 from datetime import date, datetime
 
+uplink_key = os.environ['UPLINK_KEY'] 
+anvil.server.connect(uplink_key)
 
-anvil.server.connect("server_7H4WUF46LHBZE5AZNNVOPM4S-VFUBAVKSCYH72RXM")
 '''
 # LOCAL - Remove the following lines for Heroku
 

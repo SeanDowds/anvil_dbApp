@@ -1,5 +1,6 @@
 anvil-uplink==0.4.2
 future==0.18.3
+gunicorn==20.1.0
+psycopg2-binary==2.9.6
 six==1.16.0
 ws4py==0.5.1
-gunicorn==20.1.0

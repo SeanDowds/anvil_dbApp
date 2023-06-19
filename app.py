@@ -8,13 +8,10 @@ from datetime import date, datetime
 anvil.server.connect("server_7H4WUF46LHBZE5AZNNVOPM4S-VFUBAVKSCYH72RXM")
 '''
 # LOCAL - Remove the following lines for Heroku
-DB_HOST = 'ec2-52-3-81-13.compute-1.amazonaws.com'
-DB_NAME = 'dnt7oc0n8ddn6'
-DB_USER = 'joeahnirjlifnu'
-DB_PASSWORD = 'd812de1014fd81d9a476e45b3e7446655be39e8b8a37a2ac12b2a8cd82063c4a'
 
 '''
 # HEROKU - ADD THESE INSTEAD:
+import os
 DB_HOST = os.environ.get('DB_HOST')
 DB_NAME = os.environ.get('DB_NAME')
 DB_USER = os.environ.get('DB_USER')

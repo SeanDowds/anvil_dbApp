@@ -5,7 +5,7 @@ import psycopg2 as pg2
 from datetime import date, datetime
 import os
 
-uplink_key = os.environ['UPLINK_KEY'] 
+uplink_key = os.environ['UPLINK_KEY']
 anvil.server.connect(uplink_key)
 
 '''

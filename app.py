@@ -67,7 +67,7 @@ def get_items():
 
 @anvil.server.callable
 def say_hello(name):
-  response = ("Hello from you Macbook M1 uplink, %s!" % name)
+  response = ("Hello from you Serverside uplink, %s!" % name)
   print('You are in your own Terminal - ',response)
   return response
 

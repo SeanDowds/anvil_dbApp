@@ -1,4 +1,4 @@
-import anvil.server
+import anvil
 import psycopg2 as pg2
 import anvil.server
 
@@ -296,8 +296,12 @@ def fetchSelectionList():
 
 
 @anvil.server.callable
-def hello_heroku():
-    return f"Hello.  Regards from your Heroku anvil-test App"
+def heroku_calls_anvil():
+  return anvil.server.call("hello_from_anvil")
+
+@anvil.server.callable  
+def hello_from_heroku():
+  return "Hello from Heroku!"
     
 
 # Start the Anvil server

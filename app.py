@@ -293,7 +293,10 @@ def fetchSelectionList():
 
   return businessList,businessCount,webList,webCount,qualityList,qualityCount,authList,authCount
 
-
+@anvil.server.callable
+def hello_heroku(name):
+    return f"Hello {name}.  Regards from your Heroku anvil-test App"
+    
 
 # Start the Anvil server
 anvil.server.wait_forever()

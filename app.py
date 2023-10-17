@@ -296,8 +296,8 @@ def fetchSelectionList():
 
 
 @anvil.server.callable
-def hello_heroku(name):
-    return f"Hello {name}.  Regards from your Heroku anvil-test App"
+def hello_heroku():
+    return f"Hello.  Regards from your Heroku anvil-test App"
     
 
 # Start the Anvil server

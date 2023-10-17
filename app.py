@@ -1,19 +1,20 @@
 import anvil.server
 import psycopg2 as pg2
-#import time
 import anvil.server
 
 from datetime import date, datetime
 import os
 
-uplink_key = os.environ['UPLINK_KEY']
-anvil.server.connect(uplink_key)
 
+# uplink_key = os.environ['UPLINK_KEY']
+anvil.server.connect('UPLINK_KEY')
 
 '''
 # LOCAL - Remove the following lines for Heroku
-
+# The Uplink Key is different for each app, so it needs to be changed on to siut the key that has been
+# Allocated to the anvil clientside app when adding the uplink - this includes a websocket so the serverside listens when it is being called
 '''
+
 # HEROKU - ADD THESE INSTEAD:
 DB_HOST = os.environ.get('DB_HOST')
 DB_NAME = os.environ.get('DB_NAME')
@@ -292,6 +293,7 @@ def fetchSelectionList():
     authCount[i]+=1
 
   return businessList,businessCount,webList,webCount,qualityList,qualityCount,authList,authCount
+
 
 @anvil.server.callable
 def hello_heroku(name):

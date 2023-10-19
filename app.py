@@ -7,7 +7,7 @@ import os
 
 
 # uplink_key = os.environ['UPLINK_KEY']
-anvil.server.connect('server_JI4CJBFWWDR57RGATW5TJREU-KXOSLB3E74XGJLIP')
+# anvil.server.connect('server_JI4CJBFWWDR57RGATW5TJREU-KXOSLB3E74XGJLIP')
 
 '''
 # LOCAL - Remove the following lines for Heroku
